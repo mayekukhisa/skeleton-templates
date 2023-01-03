@@ -1,0 +1,20 @@
+{
+   "textFiles": [
+      {
+         "sourcePath": "text/_editorconfig.txt",
+         "targetPath": ".editorconfig"
+      },
+      {
+         "sourcePath": "text/_gitattributes.txt",
+         "targetPath": ".gitattributes"
+      },
+      {
+         "sourcePath": "text/_gitignore.txt",
+         "targetPath": ".gitignore"
+      },
+      {
+         "sourcePath": "text/_vscode-settings.json",
+         "targetPath": ".vscode/settings.json"
+      }
+   ]
+}
