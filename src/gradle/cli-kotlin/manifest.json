@@ -1,0 +1,70 @@
+{
+   "binaryFiles": [
+      {
+         "sourcePath": "../common/binary/gradle-wrapper.jar",
+         "targetPath": "gradle/wrapper/gradle-wrapper.jar"
+      }
+   ],
+   "freemarkerFiles": [
+      {
+         "sourcePath": "freemarker/App.kt.ftl",
+         "targetPath": "src/main/kotlin/${packageName?replace('.', '/')}/App.kt"
+      },
+      {
+         "sourcePath": "freemarker/build.gradle.kts.ftl",
+         "targetPath": "build.gradle.kts"
+      },
+      {
+         "sourcePath": "freemarker/ExampleUnitTest.kt.ftl",
+         "targetPath": "src/test/kotlin/${packageName?replace('.', '/')}/ExampleUnitTest.kt"
+      },
+      {
+         "sourcePath": "freemarker/Main.kt.ftl",
+         "targetPath": "src/main/kotlin/${packageName?replace('.', '/')}/Main.kt"
+      },
+      {
+         "sourcePath": "freemarker/settings.gradle.kts.ftl",
+         "targetPath": "settings.gradle.kts"
+      }
+   ],
+   "textFiles": [
+      {
+         "sourcePath": "../common/text/_vscode-settings.json",
+         "targetPath": ".vscode/settings.json"
+      },
+      {
+         "sourcePath": "../common/text/gradle-wrapper.properties",
+         "targetPath": "gradle/wrapper/gradle-wrapper.properties"
+      },
+      {
+         "sourcePath": "../common/text/gradlew",
+         "targetPath": "gradlew",
+         "executable": true
+      },
+      {
+         "sourcePath": "../common/text/gradlew.bat",
+         "targetPath": "gradlew.bat"
+      },
+      {
+         "sourcePath": "../common/text/spotless-prettierrc.yml",
+         "targetPath": "spotless/config/prettierrc.yml"
+      },
+      {
+         "sourcePath": "text/_editorconfig",
+         "targetPath": ".editorconfig"
+      },
+      {
+         "sourcePath": "text/_gitattributes",
+         "targetPath": ".gitattributes"
+      },
+      {
+         "sourcePath": "text/_gitignore",
+         "targetPath": ".gitignore"
+      },
+
+      {
+         "sourcePath": "text/gradle.properties",
+         "targetPath": "gradle.properties"
+      }
+   ]
+}

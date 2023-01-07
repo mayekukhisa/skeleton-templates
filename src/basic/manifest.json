@@ -1,4 +1,6 @@
 {
+   "binaryFiles": [],
+   "freemarkerFiles": [],
    "textFiles": [
       {
          "sourcePath": "text/_editorconfig.txt",

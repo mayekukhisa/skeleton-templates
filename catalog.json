@@ -3,6 +3,10 @@
       {
          "name": "basic",
          "path": "src/basic"
+      },
+      {
+         "name": "cli-kt",
+         "path": "src/gradle/cli-kotlin"
       }
    ]
 }
