@@ -1,0 +1,165 @@
+{
+   "binaryFiles": [
+      {
+         "sourcePath": "../common/binary/gradle-wrapper.jar",
+         "targetPath": "gradle/wrapper/gradle-wrapper.jar"
+      },
+      {
+         "sourcePath": "binary/hdpi-ic_launcher_round.webp",
+         "targetPath": "app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+      },
+      {
+         "sourcePath": "binary/hdpi-ic_launcher.webp",
+         "targetPath": "app/src/main/res/mipmap-hdpi/ic_launcher.webp"
+      },
+      {
+         "sourcePath": "binary/mdpi-ic_launcher_round.webp",
+         "targetPath": "app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
+      },
+      {
+         "sourcePath": "binary/mdpi-ic_launcher.webp",
+         "targetPath": "app/src/main/res/mipmap-mdpi/ic_launcher.webp"
+      },
+      {
+         "sourcePath": "binary/xhdpi-ic_launcher_round.webp",
+         "targetPath": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
+      },
+      {
+         "sourcePath": "binary/xhdpi-ic_launcher.webp",
+         "targetPath": "app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+      },
+      {
+         "sourcePath": "binary/xxhdpi-ic_launcher_round.webp",
+         "targetPath": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+      },
+      {
+         "sourcePath": "binary/xxhdpi-ic_launcher.webp",
+         "targetPath": "app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
+      },
+      {
+         "sourcePath": "binary/xxxhdpi-ic_launcher_round.webp",
+         "targetPath": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
+      },
+      {
+         "sourcePath": "binary/xxxhdpi-ic_launcher.webp",
+         "targetPath": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
+      }
+   ],
+   "freemarkerFiles": [
+      {
+         "sourcePath": "freemarker/app-build.gradle.kts.ftl",
+         "targetPath": "app/build.gradle.kts"
+      },
+      {
+         "sourcePath": "freemarker/Color.kt.ftl",
+         "targetPath": "app/src/main/kotlin/${packageName?replace('.', '/')}/ui/theme/Color.kt"
+      },
+      {
+         "sourcePath": "freemarker/ExampleInstrumentedTest.kt.ftl",
+         "targetPath": "app/src/androidTest/kotlin/${packageName?replace('.', '/')}/ExampleInstrumentedTest.kt"
+      },
+      {
+         "sourcePath": "freemarker/ExampleUnitTest.kt.ftl",
+         "targetPath": "app/src/test/kotlin/${packageName?replace('.', '/')}/ExampleUnitTest.kt"
+      },
+      {
+         "sourcePath": "freemarker/MainActivity.kt.ftl",
+         "targetPath": "app/src/main/kotlin/${packageName?replace('.', '/')}/MainActivity.kt"
+      },
+      {
+         "sourcePath": "freemarker/settings.gradle.kts.ftl",
+         "targetPath": "settings.gradle.kts"
+      },
+      {
+         "sourcePath": "freemarker/strings.xml.ftl",
+         "targetPath": "app/src/main/res/values/strings.xml"
+      },
+      {
+         "sourcePath": "freemarker/Theme.kt.ftl",
+         "targetPath": "app/src/main/kotlin/${packageName?replace('.', '/')}/ui/theme/Theme.kt"
+      },
+      {
+         "sourcePath": "freemarker/Type.kt.ftl",
+         "targetPath": "app/src/main/kotlin/${packageName?replace('.', '/')}/ui/theme/Type.kt"
+      }
+   ],
+   "textFiles": [
+      {
+         "sourcePath": "../common/text/_vscode-settings.json",
+         "targetPath": ".vscode/settings.json"
+      },
+      {
+         "sourcePath": "../common/text/gradle-wrapper.properties",
+         "targetPath": "gradle/wrapper/gradle-wrapper.properties"
+      },
+      {
+         "sourcePath": "../common/text/gradlew",
+         "targetPath": "gradlew",
+         "executable": true
+      },
+      {
+         "sourcePath": "../common/text/gradlew.bat",
+         "targetPath": "gradlew.bat"
+      },
+      {
+         "sourcePath": "../common/text/spotless-prettierrc.yml",
+         "targetPath": "spotless/config/prettierrc.yml"
+      },
+      {
+         "sourcePath": "text/_editorconfig",
+         "targetPath": ".editorconfig"
+      },
+      {
+         "sourcePath": "text/_gitattributes",
+         "targetPath": ".gitattributes"
+      },
+      {
+         "sourcePath": "text/_gitignore",
+         "targetPath": ".gitignore"
+      },
+      {
+         "sourcePath": "text/AndroidManifest.xml",
+         "targetPath": "app/src/main/AndroidManifest.xml"
+      },
+      {
+         "sourcePath": "text/build.gradle.kts",
+         "targetPath": "build.gradle.kts"
+      },
+      {
+         "sourcePath": "text/gradle.properties",
+         "targetPath": "gradle.properties"
+      },
+      {
+         "sourcePath": "text/ic_launcher_background.xml",
+         "targetPath": "app/src/main/res/drawable/ic_launcher_background.xml"
+      },
+      {
+         "sourcePath": "text/ic_launcher_foreground.xml",
+         "targetPath": "app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+      },
+      {
+         "sourcePath": "text/ic_launcher_round.xml",
+         "targetPath": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+      },
+      {
+         "sourcePath": "text/ic_launcher.xml",
+         "targetPath": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+      },
+      {
+         "sourcePath": "text/night-themes.xml",
+         "targetPath": "app/src/main/res/values-night/themes.xml"
+      },
+      {
+         "sourcePath": "text/proguard-rules.pro",
+         "targetPath": "app/proguard-rules.pro"
+      },
+      {
+         "sourcePath": "text/spotless-xml.prefs",
+         "targetPath": "spotless/config/xml.prefs"
+      },
+      {
+         "sourcePath": "text/themes.xml",
+         "targetPath": "app/src/main/res/values/themes.xml"
+      }
+   ]
+}

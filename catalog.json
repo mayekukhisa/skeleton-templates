@@ -5,6 +5,10 @@
          "path": "src/basic"
       },
       {
+         "name": "android-kt",
+         "path": "src/gradle/android-kotlin"
+      },
+      {
          "name": "cli-kt",
          "path": "src/gradle/cli-kotlin"
       }
