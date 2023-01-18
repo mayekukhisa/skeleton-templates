@@ -11,6 +11,10 @@
       {
          "name": "cli-kt",
          "path": "src/gradle/cli-kotlin"
+      },
+      {
+         "name": "next-ts",
+         "path": "src/node/nextjs-typescript"
       }
    ]
 }
