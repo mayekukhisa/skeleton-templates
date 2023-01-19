@@ -14,7 +14,11 @@
       },
       {
          "name": "next-ts",
-         "path": "src/node/nextjs-typescript"
+         "path": "src/node/nextjs-typescript/basic"
+      },
+      {
+         "name": "next-ts+tw",
+         "path": "src/node/nextjs-typescript/tailwind-css"
       }
    ]
 }
