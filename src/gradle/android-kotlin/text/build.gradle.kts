@@ -1,12 +1,12 @@
 import com.diffplug.spotless.extra.wtp.EclipseWtpFormatterStep
 
 plugins {
-   val agpVersion = "7.3.1"
+   val agpVersion = "8.0.0"
    id("com.android.application") version agpVersion apply false
    id("com.android.library") version agpVersion apply false
 
    id("com.diffplug.spotless") version "6.12.0"
-   kotlin("android") version "1.7.20" apply false
+   kotlin("android") version "1.8.10" apply false
 }
 
 spotless {
