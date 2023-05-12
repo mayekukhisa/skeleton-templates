@@ -1,7 +1,8 @@
 {
    "binaryFiles": [
       {
-         "sourcePath": "../common/binary/favicon.ico",
+         "sourceRoot": "../common",
+         "sourcePath": "binary/favicon.ico",
          "targetPath": "public/favicon.ico"
       }
    ],
@@ -17,39 +18,48 @@
    ],
    "textFiles": [
       {
-         "sourcePath": "../../common/text/_editorconfig",
+         "sourceRoot": "../../common",
+         "sourcePath": "text/_editorconfig",
          "targetPath": ".editorconfig"
       },
       {
-         "sourcePath": "../../common/text/_gitattributes",
+         "sourceRoot": "../../common",
+         "sourcePath": "text/_gitattributes",
          "targetPath": ".gitattributes"
       },
       {
-         "sourcePath": "../../common/text/_prettierrc.yml",
+         "sourceRoot": "../../common",
+         "sourcePath": "text/_prettierrc.yml",
          "targetPath": ".prettierrc.yml"
       },
       {
-         "sourcePath": "../common/text/_gitignore",
+         "sourceRoot": "../common",
+         "sourcePath": "text/_gitignore",
          "targetPath": ".gitignore"
       },
       {
-         "sourcePath": "../common/text/_vscode-settings.json",
+         "sourceRoot": "../common",
+         "sourcePath": "text/_vscode-settings.json",
          "targetPath": ".vscode/settings.json"
       },
       {
-         "sourcePath": "../common/text/app.tsx",
+         "sourceRoot": "../common",
+         "sourcePath": "text/app.tsx",
          "targetPath": "src/pages/_app.tsx"
       },
       {
-         "sourcePath": "../common/text/document.tsx",
+         "sourceRoot": "../common",
+         "sourcePath": "text/document.tsx",
          "targetPath": "src/pages/_document.tsx"
       },
       {
-         "sourcePath": "../common/text/next.config.js",
+         "sourceRoot": "../common",
+         "sourcePath": "text/next.config.js",
          "targetPath": "next.config.js"
       },
       {
-         "sourcePath": "../common/text/tsconfig.json",
+         "sourceRoot": "../common",
+         "sourcePath": "text/tsconfig.json",
          "targetPath": "tsconfig.json"
       },
       {

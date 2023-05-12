@@ -1,7 +1,8 @@
 {
    "binaryFiles": [
       {
-         "sourcePath": "../common/binary/gradle-wrapper.jar",
+         "sourceRoot": "../common",
+         "sourcePath": "binary/gradle-wrapper.jar",
          "targetPath": "gradle/wrapper/gradle-wrapper.jar"
       }
    ],
@@ -29,24 +30,29 @@
    ],
    "textFiles": [
       {
-         "sourcePath": "../common/text/_vscode-settings.json",
+         "sourceRoot": "../common",
+         "sourcePath": "text/_vscode-settings.json",
          "targetPath": ".vscode/settings.json"
       },
       {
-         "sourcePath": "../common/text/gradle-wrapper.properties",
+         "sourceRoot": "../common",
+         "sourcePath": "text/gradle-wrapper.properties",
          "targetPath": "gradle/wrapper/gradle-wrapper.properties"
       },
       {
-         "sourcePath": "../common/text/gradlew",
+         "sourceRoot": "../common",
+         "sourcePath": "text/gradlew",
          "targetPath": "gradlew",
          "executable": true
       },
       {
-         "sourcePath": "../common/text/gradlew.bat",
+         "sourceRoot": "../common",
+         "sourcePath": "text/gradlew.bat",
          "targetPath": "gradlew.bat"
       },
       {
-         "sourcePath": "../common/text/spotless-prettierrc.yml",
+         "sourceRoot": "../common",
+         "sourcePath": "text/spotless-prettierrc.yml",
          "targetPath": "spotless/config/prettierrc.yml"
       },
       {
