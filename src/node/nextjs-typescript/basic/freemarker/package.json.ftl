@@ -5,7 +5,7 @@
  ~ LICENSE file included in the root of this source tree.
  -->
 {
-   "name": "${projectName?lower_case?replace(' |_', '-', 'r')}",
+   "name": "${projectName?lower_case?replace('[ _]', '-', 'r')}",
    "version": "0.1.0",
    "private": true,
    "scripts": {
