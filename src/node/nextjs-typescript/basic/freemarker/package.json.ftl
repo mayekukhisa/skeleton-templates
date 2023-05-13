@@ -16,20 +16,19 @@
       "lint:fix": "next lint --fix && prettier --write ./**/*.{css,js,json,yml} --ignore-path .gitignore"
    },
    "dependencies": {
-      "@next/font": "13.1.2",
-      "next": "13.1.2",
+      "next": "13.4.2",
       "react": "18.2.0",
       "react-dom": "18.2.0"
    },
    "devDependencies": {
-      "@types/node": "18.11.18",
-      "@types/react": "18.0.27",
-      "@types/react-dom": "18.0.10",
-      "eslint": "8.32.0",
-      "eslint-config-next": "13.1.2",
-      "eslint-config-prettier": "8.6.0",
+      "@types/node": "20.1.3",
+      "@types/react": "18.2.6",
+      "@types/react-dom": "18.2.4",
+      "eslint": "8.40.0",
+      "eslint-config-next": "13.4.2",
+      "eslint-config-prettier": "8.8.0",
       "eslint-plugin-prettier": "4.2.1",
-      "eslint-plugin-simple-import-sort": "9.0.0",
-      "typescript": "4.9.4"
+      "eslint-plugin-simple-import-sort": "10.0.0",
+      "typescript": "5.0.4"
    }
 }

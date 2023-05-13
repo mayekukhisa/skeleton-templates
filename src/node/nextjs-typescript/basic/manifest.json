@@ -3,13 +3,14 @@
       {
          "sourceRoot": "../common",
          "sourcePath": "binary/favicon.ico",
-         "targetPath": "public/favicon.ico"
+         "targetPath": "src/app/favicon.ico"
       }
    ],
    "freemarkerFiles": [
       {
-         "sourcePath": "freemarker/index.tsx.ftl",
-         "targetPath": "src/pages/index.tsx"
+         "sourceRoot": "../common",
+         "sourcePath": "freemarker/layout.tsx.ftl",
+         "targetPath": "src/app/layout.tsx"
       },
       {
          "sourcePath": "freemarker/package.json.ftl",
@@ -44,16 +45,6 @@
       },
       {
          "sourceRoot": "../common",
-         "sourcePath": "text/app.tsx",
-         "targetPath": "src/pages/_app.tsx"
-      },
-      {
-         "sourceRoot": "../common",
-         "sourcePath": "text/document.tsx",
-         "targetPath": "src/pages/_document.tsx"
-      },
-      {
-         "sourceRoot": "../common",
          "sourcePath": "text/next.config.js",
          "targetPath": "next.config.js"
       },
@@ -68,11 +59,15 @@
       },
       {
          "sourcePath": "text/globals.css",
-         "targetPath": "src/styles/globals.css"
+         "targetPath": "src/app/globals.css"
       },
       {
-         "sourcePath": "text/home.module.css",
-         "targetPath": "src/styles/home.module.css"
+         "sourcePath": "text/page.module.css",
+         "targetPath": "src/app/page.module.css"
+      },
+      {
+         "sourcePath": "text/page.tsx",
+         "targetPath": "src/app/page.tsx"
       }
    ]
 }
