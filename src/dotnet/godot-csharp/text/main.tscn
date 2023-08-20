@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://dby75ieoihg2"]
+
+[ext_resource type="Script" path="res://scripts/Tag.cs" id="1_bibky"]
+
+[sub_resource type="Animation" id="Animation_uclhg"]
+resource_name = "bob"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-180, -22.5), Vector2(-180, -12.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wdi8a"]
+_data = {
+"bob": SubResource("Animation_uclhg")
+}
+
+[node name="Main" type="Node"]
+
+[node name="Tag" type="Node2D" parent="." node_paths=PackedStringArray("TagAnimation")]
+script = ExtResource("1_bibky")
+TagAnimation = NodePath("Label Animation")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="Tag"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -22.5
+offset_right = 180.0
+offset_bottom = 22.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Catchphrase 😎"
+horizontal_alignment = 1
+
+[node name="Label Animation" type="AnimationPlayer" parent="Tag"]
+libraries = {
+"": SubResource("AnimationLibrary_wdi8a")
+}

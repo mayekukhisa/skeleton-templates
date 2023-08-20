@@ -1,0 +1,62 @@
+{
+   "binaryFiles": [],
+   "freemarkerFiles": [
+      {
+         "sourcePath": "freemarker/project.csproj.ftl",
+         "targetPath": "${projectName}.csproj"
+      },
+      {
+         "sourcePath": "freemarker/project.godot.ftl",
+         "targetPath": "project.godot"
+      },
+      {
+         "sourcePath": "freemarker/project.sln.ftl",
+         "targetPath": "${projectName}.sln"
+      }
+   ],
+   "textFiles": [
+      {
+         "sourceRoot": "../common",
+         "sourcePath": "text/_editorconfig.txt",
+         "targetPath": ".editorconfig"
+      },
+      {
+         "sourceRoot": "../common",
+         "sourcePath": "text/_gitattributes.txt",
+         "targetPath": ".gitattributes"
+      },
+      {
+         "sourceRoot": "../common",
+         "sourcePath": "text/_vscode-settings.json",
+         "targetPath": ".vscode/settings.json"
+      },
+      {
+         "sourcePath": "text/_gitignore.txt",
+         "targetPath": ".gitignore"
+      },
+      {
+         "sourcePath": "text/_vscode-launch.json",
+         "targetPath": ".vscode/launch.json"
+      },
+      {
+         "sourcePath": "text/_vscode-tasks.json",
+         "targetPath": ".vscode/tasks.json"
+      },
+      {
+         "sourcePath": "text/Tag.cs",
+         "targetPath": "scripts/Tag.cs"
+      },
+      {
+         "sourcePath": "text/icon.svg",
+         "targetPath": "icon.svg"
+      },
+      {
+         "sourcePath": "text/icon.svg.import",
+         "targetPath": "icon.svg.import"
+      },
+      {
+         "sourcePath": "text/main.tscn",
+         "targetPath": "scenes/main.tscn"
+      }
+   ]
+}

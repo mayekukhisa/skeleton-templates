@@ -1,0 +1,38 @@
+{
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "Run Project",
+         "type": "coreclr",
+         "request": "launch",
+         "preLaunchTask": "build",
+         "program": "${env:GODOT_PATH}",
+         "args": ["--path", "${workspaceFolder}"],
+         "console": "internalConsole"
+      },
+      {
+         "name": "Run Specific Scene",
+         "type": "coreclr",
+         "request": "launch",
+         "preLaunchTask": "build",
+         "program": "${env:GODOT_PATH}",
+         "args": ["--path", "${workspaceFolder}", "${input:scenePath}"],
+         "console": "internalConsole"
+      },
+      {
+         "name": "Attach to Process",
+         "type": "coreclr",
+         "request": "attach"
+      }
+   ],
+   "inputs": [
+      {
+         "id": "scenePath",
+         "type": "command",
+         "command": "extension.commandvariable.file.pickFile",
+         "args": {
+            "include": "**/*.tscn"
+         }
+      }
+   ]
+}

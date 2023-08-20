@@ -13,6 +13,10 @@
          "path": "src/gradle/cli-kotlin"
       },
       {
+         "name": "godot-cs",
+         "path": "src/dotnet/godot-csharp"
+      },
+      {
          "name": "next-ts",
          "path": "src/node/nextjs-typescript/basic"
       },
