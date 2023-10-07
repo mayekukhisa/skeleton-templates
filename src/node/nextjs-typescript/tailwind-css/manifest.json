@@ -70,8 +70,8 @@
          "targetPath": "postcss.config.js"
       },
       {
-         "sourcePath": "text/tailwind.config.js",
-         "targetPath": "tailwind.config.js"
+         "sourcePath": "text/tailwind.config.ts",
+         "targetPath": "tailwind.config.ts"
       }
    ]
 }
