@@ -13,6 +13,10 @@
          "targetPath": "src/app/layout.tsx"
       },
       {
+         "sourcePath": "freemarker/package-lock.json.ftl",
+         "targetPath": "package-lock.json"
+      },
+      {
          "sourcePath": "freemarker/package.json.ftl",
          "targetPath": "package.json"
       }
