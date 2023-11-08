@@ -1,35 +1,30 @@
 import com.diffplug.spotless.extra.wtp.EclipseWtpFormatterStep
 
 plugins {
-   val agpVersion = "8.0.0"
+   val agpVersion = "8.1.3"
    id("com.android.application") version agpVersion apply false
    id("com.android.library") version agpVersion apply false
 
-   id("com.diffplug.spotless") version "6.12.0"
-   kotlin("android") version "1.8.10" apply false
+   id("com.diffplug.spotless") version "6.22.0"
+   kotlin("android") version "1.9.20" apply false
 }
 
 spotless {
-   /*
-    Spotless does not yet support .editorconfig settings with Ktlint.
-    We have to provide them manually.
-    */
    mapOf(
-      "indent_size" to 3,
-      "max_line_length" to 120,
-      "ij_kotlin_allow_trailing_comma" to true,
-      "ij_kotlin_allow_trailing_comma_on_call_site" to true,
-   ).let {
+      "ktlint_standard_comment-wrapping" to "disabled",
+      "ktlint_standard_discouraged-comment-location" to "disabled",
+      "ktlint_standard_function-naming" to "disabled",
+   ).let { ktlintRules ->
       kotlin {
          target("**/*.kt")
          targetExclude("**/build/**/*.kt")
-         ktlint().editorConfigOverride(it)
+         ktlint().editorConfigOverride(ktlintRules)
       }
 
       kotlinGradle {
          target("**/*.kts")
          targetExclude("**/build/**/*.kts")
-         ktlint().editorConfigOverride(it)
+         ktlint().editorConfigOverride(ktlintRules)
       }
    }
 

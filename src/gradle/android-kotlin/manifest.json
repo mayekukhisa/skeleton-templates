@@ -141,7 +141,7 @@
       },
       {
          "sourcePath": "text/ic_launcher_foreground.xml",
-         "targetPath": "app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+         "targetPath": "app/src/main/res/drawable/ic_launcher_foreground.xml"
       },
       {
          "sourcePath": "text/ic_launcher_round.xml",

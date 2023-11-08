@@ -9,9 +9,13 @@ plugins {
    kotlin("android")
 }
 
+kotlin {
+   jvmToolchain(17)
+}
+
 android {
    namespace = "${packageName}"
-   compileSdk = 33
+   compileSdk = 34
 
    defaultConfig {
       applicationId = namespace
@@ -37,21 +41,12 @@ android {
       }
    }
 
-   compileOptions {
-      sourceCompatibility = JavaVersion.VERSION_17
-      targetCompatibility = JavaVersion.VERSION_17
-   }
-
-   kotlinOptions {
-      jvmTarget = "17"
-   }
-
    buildFeatures {
       compose = true
    }
 
    composeOptions {
-      kotlinCompilerExtensionVersion = "1.4.4"
+      kotlinCompilerExtensionVersion = "1.5.4"
    }
 
    packaging {
@@ -62,17 +57,17 @@ android {
 }
 
 dependencies {
-   val composeBom = platform("androidx.compose:compose-bom:2023.04.00")
+   val composeBom = platform("androidx.compose:compose-bom:2023.10.01")
    implementation(composeBom)
    androidTestImplementation(composeBom)
 
-   implementation("androidx.activity:activity-compose:1.7.0")
+   implementation("androidx.activity:activity-compose:1.8.0")
    implementation("androidx.compose.material3:material3")
    implementation("androidx.compose.ui:ui")
    implementation("androidx.compose.ui:ui-tooling-preview")
-   implementation("androidx.core:core-ktx:1.10.0")
-   implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
-   implementation("com.google.accompanist:accompanist-systemuicontroller:0.30.1")
+   implementation("androidx.core:core-ktx:1.12.0")
+   implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+   implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
 
    debugImplementation("androidx.compose.ui:ui-test-manifest")
    debugImplementation("androidx.compose.ui:ui-tooling")
