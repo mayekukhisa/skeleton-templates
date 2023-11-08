@@ -6,8 +6,8 @@
  -->
 plugins {
    application
-   id("com.diffplug.spotless") version "6.12.0"
-   kotlin("jvm") version "1.8.10"
+   id("com.diffplug.spotless") version "6.22.0"
+   kotlin("jvm") version "1.9.20"
 }
 
 kotlin {
@@ -15,27 +15,16 @@ kotlin {
 }
 
 spotless {
-   /*
-    Spotless does not yet support .editorconfig settings with Ktlint.
-    We have to provide them manually.
-    */
-   mapOf(
-      "indent_size" to 3,
-      "max_line_length" to 120,
-      "ij_kotlin_allow_trailing_comma" to true,
-      "ij_kotlin_allow_trailing_comma_on_call_site" to true,
-   ).let {
-      kotlin {
-         target("**/*.kt")
-         targetExclude("**/build/**/*.kt")
-         ktlint().editorConfigOverride(it)
-      }
+   kotlin {
+      target("**/*.kt")
+      targetExclude("**/build/**/*.kt")
+      ktlint()
+   }
 
-      kotlinGradle {
-         target("**/*.kts")
-         targetExclude("**/build/**/*.kts")
-         ktlint().editorConfigOverride(it)
-      }
+   kotlinGradle {
+      target("**/*.kts")
+      targetExclude("**/build/**/*.kts")
+      ktlint()
    }
 
    with(rootProject.file("spotless/config/prettierrc.yml")) {
