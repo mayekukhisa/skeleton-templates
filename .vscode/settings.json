@@ -8,8 +8,10 @@
    "[markdown]": {
       "editor.wordWrap": "wordWrapColumn"
    },
+   "editor.detectIndentation": false,
    "editor.formatOnSave": true,
    "editor.rulers": [120],
+   "editor.tabSize": 3,
    "editor.wordWrap": "wordWrapColumn",
    "editor.wordWrapColumn": 120,
    "editor.wrappingIndent": "indent",
