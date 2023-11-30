@@ -18,7 +18,7 @@ config_version=5
 
 config/name="${projectName}"
 run/main_scene="res://scenes/main.tscn"
-config/features=PackedStringArray("4.1", "C#", "Forward Plus")
+config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [dotnet]
