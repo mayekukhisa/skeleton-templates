@@ -30,7 +30,6 @@
    ],
    "textFiles": [
       {
-         "sourceRoot": "../common",
          "sourcePath": "text/_vscode-settings.json",
          "targetPath": ".vscode/settings.json"
       },
