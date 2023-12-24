@@ -16,7 +16,7 @@
       "lint:fix": "next lint --fix && prettier --write ./**/*.{css,js,json,yml} --ignore-path .gitignore"
    },
    "dependencies": {
-      "next": "14.0.3",
+      "next": "14.0.4",
       "react": "^18",
       "react-dom": "^18"
    },
@@ -26,7 +26,7 @@
       "@types/react-dom": "^18",
       "autoprefixer": "^10",
       "eslint": "^8",
-      "eslint-config-next": "14.0.3",
+      "eslint-config-next": "14.0.4",
       "eslint-config-prettier": "^9",
       "eslint-plugin-prettier": "^5",
       "eslint-plugin-simple-import-sort": "^10",
