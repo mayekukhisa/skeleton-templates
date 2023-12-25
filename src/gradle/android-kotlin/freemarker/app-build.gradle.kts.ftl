@@ -46,7 +46,7 @@ android {
    }
 
    composeOptions {
-      kotlinCompilerExtensionVersion = "1.5.4"
+      kotlinCompilerExtensionVersion = "1.5.7"
    }
 
    packaging {
@@ -61,7 +61,7 @@ dependencies {
    implementation(composeBom)
    androidTestImplementation(composeBom)
 
-   implementation("androidx.activity:activity-compose:1.8.0")
+   implementation("androidx.activity:activity-compose:1.8.2")
    implementation("androidx.compose.material3:material3")
    implementation("androidx.compose.ui:ui")
    implementation("androidx.compose.ui:ui-tooling-preview")
