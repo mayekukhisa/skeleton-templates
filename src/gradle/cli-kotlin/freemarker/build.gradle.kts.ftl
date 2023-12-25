@@ -6,8 +6,8 @@
  -->
 plugins {
    application
-   id("com.diffplug.spotless") version "6.22.0"
-   kotlin("jvm") version "1.9.20"
+   id("com.diffplug.spotless") version "6.23.3"
+   kotlin("jvm") version "1.9.21"
 }
 
 kotlin {
