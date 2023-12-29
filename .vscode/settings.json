@@ -6,7 +6,11 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
    "[markdown]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
       "editor.wordWrap": "wordWrapColumn"
+   },
+   "[yaml]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
    "editor.detectIndentation": false,
    "editor.formatOnSave": true,
