@@ -42,7 +42,7 @@ A curated collection of templates crafted to complement [Skeleton][1], designed 
 
 This template collection is available under the terms of the [MIT license][4].
 
-&copy; 2023 Mayeku Khisa.
+&copy; 2023-2024 Mayeku Khisa.
 
 [1]: https://github.com/mayekukhisa/skeleton
 [2]: https://github.com/mayekukhisa/skeleton-templates/releases/latest
