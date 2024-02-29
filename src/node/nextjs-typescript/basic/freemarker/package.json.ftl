@@ -12,11 +12,11 @@
       "dev": "next dev",
       "build": "next build",
       "start": "next start",
-      "lint": "next lint && prettier --check ./**/*.{css,js,json,yml} --ignore-path .gitignore",
-      "lint:fix": "next lint --fix && prettier --write ./**/*.{css,js,json,yml} --ignore-path .gitignore"
+      "lint": "next lint && codecap --check && prettier --check ./**/*.{css,json,mjs,yml}",
+      "lint:fix": "next lint --fix && codecap --fix && prettier --write ./**/*.{css,json,mjs,yml}"
    },
    "dependencies": {
-      "next": "14.0.4",
+      "next": "14.1.0",
       "react": "^18",
       "react-dom": "^18"
    },
@@ -24,11 +24,13 @@
       "@types/node": "^20",
       "@types/react": "^18",
       "@types/react-dom": "^18",
+      "codecap": "^0",
       "eslint": "^8",
-      "eslint-config-next": "14.0.4",
+      "eslint-config-next": "14.1.0",
       "eslint-config-prettier": "^9",
       "eslint-plugin-prettier": "^5",
-      "eslint-plugin-simple-import-sort": "^10",
+      "eslint-plugin-simple-import-sort": "^12",
+      "prettier": "^3",
       "typescript": "^5"
    }
 }

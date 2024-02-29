@@ -1,0 +1,16 @@
+{
+   "useYearRange": true,
+   "ruleSet": [
+      {
+         "target": "**/*.{css,ts,tsx}",
+         "targetExclude": ["node_modules/**", ".next/**", "next-env.d.ts"],
+         "headerFile": "header-templates/general.txt",
+         "headerDelimiter": "^(?![\\/ ]\\*)."
+      },
+      {
+         "target": "next.config.mjs",
+         "headerFile": "header-templates/next-config.txt",
+         "headerDelimiter": "^(?![\\/ ]\\*)."
+      }
+   ]
+}

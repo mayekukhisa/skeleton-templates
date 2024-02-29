@@ -49,13 +49,27 @@
       },
       {
          "sourceRoot": "../common",
-         "sourcePath": "text/next.config.js",
-         "targetPath": "next.config.js"
+         "sourcePath": "text/general-header-template.txt",
+         "targetPath": "header-templates/general.txt"
+      },
+      {
+         "sourceRoot": "../common",
+         "sourcePath": "text/next-config-header-template.txt",
+         "targetPath": "header-templates/next-config.txt"
+      },
+      {
+         "sourceRoot": "../common",
+         "sourcePath": "text/next.config.mjs",
+         "targetPath": "next.config.mjs"
       },
       {
          "sourceRoot": "../common",
          "sourcePath": "text/tsconfig.json",
          "targetPath": "tsconfig.json"
+      },
+      {
+         "sourcePath": "text/_codecaprc.json",
+         "targetPath": ".codecaprc.json"
       },
       {
          "sourcePath": "text/_eslintrc.json",

@@ -1,0 +1,5 @@
+/*
+ * Copyright $YEAR Original Author(s).
+ */
+
+/** @type {import('next').NextConfig} */

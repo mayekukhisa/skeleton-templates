@@ -12,11 +12,11 @@
       "dev": "next dev",
       "build": "next build",
       "start": "next start",
-      "lint": "next lint && prettier --check ./**/*.{css,js,json,yml} --ignore-path .gitignore",
-      "lint:fix": "next lint --fix && prettier --write ./**/*.{css,js,json,yml} --ignore-path .gitignore"
+      "lint": "next lint && codecap --check && prettier --check ./**/*.{css,js,json,mjs,yml} tailwind.config.ts",
+      "lint:fix": "next lint --fix && codecap --fix && prettier --write ./**/*.{css,js,json,mjs,yml} tailwind.config.ts"
    },
    "dependencies": {
-      "next": "14.0.4",
+      "next": "14.1.0",
       "react": "^18",
       "react-dom": "^18"
    },
@@ -25,13 +25,15 @@
       "@types/react": "^18",
       "@types/react-dom": "^18",
       "autoprefixer": "^10",
+      "codecap": "^0",
       "eslint": "^8",
-      "eslint-config-next": "14.0.4",
+      "eslint-config-next": "14.1.0",
       "eslint-config-prettier": "^9",
       "eslint-plugin-prettier": "^5",
-      "eslint-plugin-simple-import-sort": "^10",
+      "eslint-plugin-simple-import-sort": "^12",
       "eslint-plugin-tailwindcss": "^3",
       "postcss": "^8",
+      "prettier": "^3",
       "tailwindcss": "^3",
       "typescript": "^5"
    }
