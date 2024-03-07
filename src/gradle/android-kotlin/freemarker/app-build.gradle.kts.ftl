@@ -5,8 +5,8 @@
  ~ LICENSE file included in the root of this source tree.
  -->
 plugins {
-   id("com.android.application")
-   kotlin("android")
+   alias(libs.plugins.android.application)
+   alias(libs.plugins.kotlin.android)
 }
 
 kotlin {
@@ -32,10 +32,10 @@ android {
    }
 
    buildTypes {
-      getByName("release") {
+      release {
          isMinifyEnabled = true
          proguardFiles(
-            getDefaultProguardFile("proguard-android.txt"),
+            getDefaultProguardFile("proguard-android-optimize.txt"),
             "proguard-rules.pro",
          )
       }
@@ -46,7 +46,7 @@ android {
    }
 
    composeOptions {
-      kotlinCompilerExtensionVersion = "1.5.7"
+      kotlinCompilerExtensionVersion = "1.5.10"
    }
 
    packaging {
@@ -57,24 +57,21 @@ android {
 }
 
 dependencies {
-   val composeBom = platform("androidx.compose:compose-bom:2023.10.01")
-   implementation(composeBom)
-   androidTestImplementation(composeBom)
+   implementation(platform(libs.androidx.compose.bom))
+   implementation(libs.androidx.activity.compose)
+   implementation(libs.androidx.core.ktx)
+   implementation(libs.androidx.lifecycle.runtime.ktx)
+   implementation(libs.androidx.material3)
+   implementation(libs.androidx.ui)
+   implementation(libs.androidx.ui.tooling.preview)
 
-   implementation("androidx.activity:activity-compose:1.8.2")
-   implementation("androidx.compose.material3:material3")
-   implementation("androidx.compose.ui:ui")
-   implementation("androidx.compose.ui:ui-tooling-preview")
-   implementation("androidx.core:core-ktx:1.12.0")
-   implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-   implementation("com.google.accompanist:accompanist-systemuicontroller:0.32.0")
+   debugImplementation(libs.androidx.ui.test.manifest)
+   debugImplementation(libs.androidx.ui.tooling)
 
-   debugImplementation("androidx.compose.ui:ui-test-manifest")
-   debugImplementation("androidx.compose.ui:ui-tooling")
+   testImplementation(libs.junit)
 
-   testImplementation("junit:junit:4.13.2")
-
-   androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-   androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-   androidTestImplementation("androidx.test.ext:junit-ktx:1.1.5")
+   androidTestImplementation(platform(libs.androidx.compose.bom))
+   androidTestImplementation(libs.androidx.espresso.core)
+   androidTestImplementation(libs.androidx.junit.ktx)
+   androidTestImplementation(libs.androidx.ui.test.junit4)
 }

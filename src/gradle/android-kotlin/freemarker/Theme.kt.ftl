@@ -14,10 +14,7 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.SideEffect
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val darkColorScheme = darkColorScheme(
    primary = purple80,
@@ -45,10 +42,10 @@ private val lightColorScheme = lightColorScheme(
 @Composable
 fun AppTheme(
    isDarkTheme: Boolean = isSystemInDarkTheme(),
-   isDynamicColor: Boolean = true, // Available on Android 12+
+   // Dynamic color is available on Android 12+
+   isDynamicColor: Boolean = true,
    content: @Composable () -> Unit,
 ) {
-   val systemUiController = rememberSystemUiController()
    val colorScheme = when {
       isDynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S -> {
          val context = LocalContext.current
@@ -57,10 +54,6 @@ fun AppTheme(
 
       isDarkTheme -> darkColorScheme
       else -> lightColorScheme
-   }
-
-   SideEffect {
-      systemUiController.setSystemBarsColor(color = Color.Transparent, darkIcons = !isDarkTheme)
    }
 
    MaterialTheme(colorScheme = colorScheme, typography = typography, content = content)

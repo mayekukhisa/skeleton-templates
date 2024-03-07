@@ -1,30 +1,23 @@
 import com.diffplug.spotless.extra.wtp.EclipseWtpFormatterStep
 
 plugins {
-   val agpVersion = "8.2.0"
-   id("com.android.application") version agpVersion apply false
-   id("com.android.library") version agpVersion apply false
-
-   id("com.diffplug.spotless") version "6.23.3"
-   kotlin("android") version "1.9.21" apply false
+   alias(libs.plugins.android.application) apply false
+   alias(libs.plugins.kotlin.android) apply false
+   alias(libs.plugins.diffplug.spotless)
 }
 
 spotless {
-   mapOf(
-      "ktlint_standard_comment-wrapping" to "disabled",
-      "ktlint_standard_discouraged-comment-location" to "disabled",
-      "ktlint_standard_function-naming" to "disabled",
-   ).let { ktlintRules ->
+   mapOf("ktlint_function_naming_ignore_when_annotated_with" to "Composable").let { config ->
       kotlin {
          target("**/*.kt")
          targetExclude("**/build/**/*.kt")
-         ktlint().editorConfigOverride(ktlintRules)
+         ktlint().editorConfigOverride(config)
       }
 
       kotlinGradle {
          target("**/*.kts")
          targetExclude("**/build/**/*.kts")
-         ktlint().editorConfigOverride(ktlintRules)
+         ktlint().editorConfigOverride(config)
       }
    }
 
