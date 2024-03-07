@@ -66,10 +66,13 @@
          "sourcePath": "text/_gitignore",
          "targetPath": ".gitignore"
       },
-
       {
          "sourcePath": "text/gradle.properties",
          "targetPath": "gradle.properties"
+      },
+      {
+         "sourcePath": "text/libs.versions.toml",
+         "targetPath": "gradle/libs.versions.toml"
       }
    ]
 }

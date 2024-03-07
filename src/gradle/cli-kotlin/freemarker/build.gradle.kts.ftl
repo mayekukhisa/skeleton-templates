@@ -6,8 +6,8 @@
  -->
 plugins {
    application
-   id("com.diffplug.spotless") version "6.23.3"
-   kotlin("jvm") version "1.9.21"
+   alias(libs.plugins.kotlin.jvm)
+   alias(libs.plugins.diffplug.spotless)
 }
 
 kotlin {
@@ -47,7 +47,7 @@ repositories {
 }
 
 dependencies {
-   testImplementation(kotlin("test"))
+   testImplementation(libs.kotlin.test)
 }
 
 group = "${packageName}"
